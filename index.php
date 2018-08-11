@@ -45,7 +45,7 @@ switch ($data->type) {
     case 'group_join':
     $VkGroup->updateCover($data);
     
-	list($width, $height) = getimagesize('cover.jpg');
+    list($width, $height) = getimagesize('cover.jpg');
     $request_params = array(
        'group_id' => $config['group_id'],
         'crop_x'   => 0,
@@ -59,6 +59,7 @@ switch ($data->type) {
     $upload_url = json_decode(file_get_contents('https://api.vk.com/method/photos.getOwnerCoverPhotoUploadServer?' . $get_params));
     // URL to upload to
     $url = $upload_url->response->upload_url;
+
     // Инициализируем cURL
 	$ch = curl_init();
 
@@ -80,8 +81,7 @@ switch ($data->type) {
 	// Закрываем соединение
 	curl_close($ch);
 
-
-	$request_params = array(
+    $request_params = array(
        'hash' => $obj->hash,
         'photo'   => $obj->photo,
         'access_token' => $config['service_token'],
