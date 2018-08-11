@@ -22,7 +22,7 @@ $config = [
         ],
         'radius' => 100,
         'first_name' => [
-            'font' => 'Roboto-Light.ttf',
+            'font' => './Roboto-Light.ttf',
             'size' => 28,
             'align' => 'center',
             'color' => [255, 255, 255], // RGB 255,255,255 - White
@@ -31,7 +31,7 @@ $config = [
             'angle' => 0,
         ],
         'second_name' => [
-            'font' => 'Roboto-Light.ttf',
+            'font' => './Roboto-Light.ttf',
             'size' => 28,
             'align' => 'center',
             'color' => [255, 255, 255],
@@ -48,7 +48,7 @@ $config = [
         ],
         'radius' => 100,
         'first_name' => [
-            'font' => 'Roboto-Light.ttf',
+            'font' => './Roboto-Light.ttf',
             'size' => 28,
             'align' => 'center',
             'color' => [255, 255, 255],
@@ -57,7 +57,7 @@ $config = [
             'angle' => 0,
         ],
         'second_name' => [
-            'font' => 'Roboto-Light.ttf',
+            'font' => './Roboto-Light.ttf',
             'size' => 28,
             'align' => 'center',
             'color' => [255, 255, 255],
