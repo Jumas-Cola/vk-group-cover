@@ -68,7 +68,6 @@ switch ($data->type) {
 	$post_data = array('file' => new CURLFile($cover_path, 'image/jpg', 'image0'));
 
 	// фото отправлено
-	$ch = curl_init();
 	curl_setopt($ch, CURLOPT_URL, $url);
 	curl_setopt($ch, CURLOPT_POST, true);
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
